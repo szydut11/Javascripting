@@ -15,17 +15,100 @@
 	<form method="post" action="nowy.html" name="myForm" onsubmit="return validateForm()">
 	<div>
 		<label>First Name</label>
-		<input id="firstName" type="text" name="firstName" onkeypress="return myKeyPress()" />
+		<input id="firstName" type="text" name="firstName" onclick="return mouseclick()"  onmouseover="Mouseover()" onmousewheel="MouseWheel()"/>
 	</div>
 	<br />
 	<div>
 		<label>Last Name</label>
-		<input id="lastName" type="text" name="lastName"  onkeypress="return Mykeypress()"  />
+		<input id="lastName" type="text" name="lastName"  ondblclick="return DoubleClick()" onkeypress="return Mykeypress()" onmouseup="MosueUp()" onwheel="Wheel()" />
 	</div>
 	<br />
-	<input type="submit" name="Submit" />
+	<input id="sumbit" type="submit" name="Submit" onmousemove="return MouseMove()"/>
 	</form>
 </div>
+<table bordercolor = "black" >
+	<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+	</tr>
+	<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+	</tr>
+	<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+	</tr>
+	<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+	</tr>
+	<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+	</tr>
+	<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+	</tr>
+	<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+	</tr>
+	<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+	</tr>
+	
+</table>
 
 <script>
 	function validateForm(){
@@ -38,28 +121,65 @@
 		}
 		
 		if(firstName.length < 3){
-			alert("First must be at least 3 characters");
-			return false;
-		}
-	}
-
-	function myKeyPress(argument) {
+			alert("First must be at least 3 characters");function myKeyPress(argument) {
 		
 		document.getElementById('firstName');
-
-		var fn = document.getElementById('firstName');
-		console.log("firstName", fn.value);
+			var fn = document.getElementById('firstName');
+				console.log("firstName", fn.value);
 			
+	}
+			return false;
+		}
 	}
 	
 	
 	function Mykeypress(argument) {
-		
 		document.getElementById('lastName');
-		var fr = document.getElementById('lastName');
-		console.log("lastName", fr.value);
+			var ln = document.getElementById('lastName');
+				console.log("lastName", ln.value);
 	}
-	 
+
+	function mouseclick(argument){
+		document.getElementById('firstName');
+			var fc = document.getElementById('firstName');
+				console.log("Kliknięto First Name", fc.value);
+	}
+	
+	function DoubleClick(argument){	
+		document.getElementById('lastName');
+			var dc = document.getElementById('lastName');
+				console.log("Kliknięto 2X w Last Name", dc.value);
+	}
+
+	function MouseMove(argument){
+		document.getElementById('sumbit');
+			var Mm = document.getElementById('sumbit');
+				console.log("Myszka śmiga nad buttonem 'Prześlj'",  Mm.value);	
+	}
+
+	function Mouseover(argument){
+		document.getElementById('firstName');
+			var Mo = document.getElementById('firstName');
+				console.log("Mouse Over First Name", Mo.value);
+	}
+
+	function MosueUp(){
+		document.getElementById('lastName');
+			var Mu = document.getElementById('lastName');
+				console.log("Mouse Up Last Name", Mu.value);	
+	}
+	
+	function MouseWheel(){
+		document.getElementById('firstName');
+			var MW = document.getElementById('firstName');
+				console.log("presuwanie myszka po first Name", MW.value);
+	}
+
+	function Wheel(){
+		document.getElementById('lastName');
+			var W = document.getElementById('lastName');
+				console.log("Przesuwanie mysza po Last Name", W.value);
+	}
 </script>
 
 </body>
