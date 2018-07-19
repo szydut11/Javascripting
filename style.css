@@ -1,14 +1,22 @@
 body{
 	text-align: center;
-	font-family: arial;
-	font-size:18px;
+	font-size: 18px;
+	font-family: 'Roboto Mono', monospace;
 }
 
-li{
-	list-style: none;
-	line-height: 2em;
-	text-align: left;
-}
+.pointsmeter {
+	float: right;
+	width: 200px;
+	height: 130px; 
+	background-color: darkgrey;
+  }
+  
+.livesmeter {
+	float:left;
+	width:200px;
+	height: 130px;
+	background-color:darkgrey;
+  }
 
 .header{
 	background:#f4f4f4;
@@ -21,10 +29,21 @@ li{
 	margin:30px auto;
 }
 table {
-    border-collapse: collapse;
+	margin: auto;
+  border-collapse: collapse;
 }
 
 table, th, td {
 	border: 1px solid black;
 	
+}
+
+.wins_lives
+{
+	text-align: center;
+	margin: auto;
+	background: darkgrey;
+	border: #000 2px solid;
+	width: 100%;
+	height: 100px; 
 }
