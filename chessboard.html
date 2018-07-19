@@ -3,104 +3,120 @@
 <head>
 	<title>My new website</title>
 	<link rel="stylesheet" href="style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 </head>
-<body>
- 
+<body oncontextmenu="return false">
 	<div class="header">
 		<h1 id = "heading">Chessboard Test </h1>
 	</div>
 	<button>
 	<a class="fwBtn fwBtn--text" id="newGame" onclick="newGame()">NewGame</a>
+
 	</button>
+	<div class="pointsmeter" />
+		Licznik punktów<br>
+		<p  id="pointsmeter"></p>
+	</div>
+	<div class="livesmeter" />
+		Licznik zyć<br>
+		<p  id="livesmeter"></p>	
+	</div><br>
+	
 <table>
 	<tr>
-			<td bgcolor="grey" width="40px" height="40px" id="field.0.0" onclick="clickHandler('field.0.0')"></td>
-			<td bgcolor="grey"width="40px" height="40px" id="field.0.1" onclick="clickHandler('field.0.1')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.0.2" onclick="clickHandler('field.0.2')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.0.3" onclick="clickHandler('field.0.3')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.0.4" onclick="clickHandler('field.0.4')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.0.5" onclick="clickHandler('field.0.5')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.0.6" onclick="clickHandler('field.0.6')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.0.7" onclick="clickHandler('field.0.7')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.0.0" onclick="clickHandler('field.0.0')" oncontextmenu = "rightClick('field.0.0')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.0.1" onclick="clickHandler('field.0.1')" oncontextmenu = "rightClick('field.0.1')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.0.2" onclick="clickHandler('field.0.2')" oncontextmenu = "rightClick('field.0.2')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.0.3" onclick="clickHandler('field.0.3')" oncontextmenu = "rightClick('field.0.3')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.0.4" onclick="clickHandler('field.0.4')" oncontextmenu = "rightClick('field.0.4')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.0.5" onclick="clickHandler('field.0.5')" oncontextmenu = "rightClick('field.0.5')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.0.6" onclick="clickHandler('field.0.6')" oncontextmenu = "rightClick('field.0.6')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.0.7" onclick="clickHandler('field.0.7')" oncontextmenu = "rightClick('field.0.7')"></td>
 	</tr>
 	<tr>
-			<td bgcolor="grey" width="40px" height="40px" id="field.1.0" onclick="clickHandler('field.1.0')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.1.1" onclick="clickHandler('field.1.1')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.1.2" onclick="clickHandler('field.1.2')" ></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.1.3" onclick="clickHandler('field.1.3')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.1.4" onclick="clickHandler('field.1.4')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.1.5" onclick="clickHandler('field.1.5')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.1.6" onclick="clickHandler('field.1.6')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.1.7" onclick="clickHandler('field.1.7')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.1.0" onclick="clickHandler('field.1.0')" oncontextmenu = "rightClick('field.1.0')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.1.1" onclick="clickHandler('field.1.1')" oncontextmenu = "rightClick('field.1.1')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.1.2" onclick="clickHandler('field.1.2')" oncontextmenu = "rightClick('field.1.2')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.1.3" onclick="clickHandler('field.1.3')" oncontextmenu = "rightClick('field.1.3')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.1.4" onclick="clickHandler('field.1.4')" oncontextmenu = "rightClick('field.1.4')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.1.5" onclick="clickHandler('field.1.5')" oncontextmenu = "rightClick('field.1.5')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.1.6" onclick="clickHandler('field.1.6')" oncontextmenu = "rightClick('field.1.6')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.1.7" onclick="clickHandler('field.1.7')" oncontextmenu = "rightClick('field.1.7')"></td>
 	</tr>
 	<tr>
-			<td bgcolor="grey" width="40px" height="40px" id="field.2.0" onclick="clickHandler('field.2.0')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.2.1" onclick="clickHandler('field.2.1')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.2.2" onclick="clickHandler('field.2.2')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.2.3" onclick="clickHandler('field.2.3')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.2.4" onclick="clickHandler('field.2.4')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.2.5" onclick="clickHandler('field.2.5')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.2.6" onclick="clickHandler('field.2.6')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.2.7" onclick="clickHandler('field.2.7')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.2.0" onclick="clickHandler('field.2.0')" oncontextmenu = "rightClick('field.2.0')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.2.1" onclick="clickHandler('field.2.1')" oncontextmenu = "rightClick('field.2.1')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.2.2" onclick="clickHandler('field.2.2')" oncontextmenu = "rightClick('field.2.2')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.2.3" onclick="clickHandler('field.2.3')" oncontextmenu = "rightClick('field.2.3')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.2.4" onclick="clickHandler('field.2.4')" oncontextmenu = "rightClick('field.2.4')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.2.5" onclick="clickHandler('field.2.5')" oncontextmenu = "rightClick('field.2.5')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.2.6" onclick="clickHandler('field.2.6')" oncontextmenu = "rightClick('field.2.6')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.2.7" onclick="clickHandler('field.2.7')" oncontextmenu = "rightClick('field.2.7')"></td>
 
 	</tr>
 	<tr>
-			<td bgcolor="grey" width="40px" height="40px" id="field.3.0" onclick="clickHandler('field.3.0')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.3.1" onclick="clickHandler('field.3.1')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.3.2" onclick="clickHandler('field.3.2')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.3.3" onclick="clickHandler('field.3.3')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.3.4" onclick="clickHandler('field.3.4')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.3.5" onclick="clickHandler('field.3.5')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.3.6" onclick="clickHandler('field.3.6')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.3.7" onclick="clickHandler('field.3.7')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.3.0" onclick="clickHandler('field.3.0')" oncontextmenu = "rightClick('field.3.0')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.3.1" onclick="clickHandler('field.3.1')" oncontextmenu = "rightClick('field.3.1')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.3.2" onclick="clickHandler('field.3.2')" oncontextmenu = "rightClick('field.3.2')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.3.3" onclick="clickHandler('field.3.3')" oncontextmenu = "rightClick('field.3.3')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.3.4" onclick="clickHandler('field.3.4')" oncontextmenu = "rightClick('field.3.4')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.3.5" onclick="clickHandler('field.3.5')" oncontextmenu = "rightClick('field.3.5')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.3.6" onclick="clickHandler('field.3.6')" oncontextmenu = "rightClick('field.3.6')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.3.7" onclick="clickHandler('field.3.7')" oncontextmenu = "rightClick('field.3.7')"></td>
 	</tr>
 	<tr>
-			<td bgcolor="grey" width="40px" height="40px" id="field.4.0" onclick="clickHandler('field.4.0')" ></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.4.1" onclick="clickHandler('field.4.1')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.4.2" onclick="clickHandler('field.4.2')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.4.3" onclick="clickHandler('field.4.3')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.4.4" onclick="clickHandler('field.4.4')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.4.5" onclick="clickHandler('field.4.5')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.4.6" onclick="clickHandler('field.4.6')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.4.7" onclick="clickHandler('field.4.7')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.4.0" onclick="clickHandler('field.4.0')" oncontextmenu = "rightClick('field.4.0')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.4.1" onclick="clickHandler('field.4.1')" oncontextmenu = "rightClick('field.4.1')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.4.2" onclick="clickHandler('field.4.2')" oncontextmenu = "rightClick('field.4.2')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.4.3" onclick="clickHandler('field.4.3')" oncontextmenu = "rightClick('field.4.3')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.4.4" onclick="clickHandler('field.4.4')" oncontextmenu = "rightClick('field.4.4')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.4.5" onclick="clickHandler('field.4.5')" oncontextmenu = "rightClick('field.4.5')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.4.6" onclick="clickHandler('field.4.6')" oncontextmenu = "rightClick('field.4.6')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.4.7" onclick="clickHandler('field.4.7')" oncontextmenu = "rightClick('field.4.7')"></td>
 	</tr>
 	<tr>
-			<td bgcolor="grey" width="40px" height="40px" id="field.5.0" onclick="clickHandler('field.5.0')" ></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.5.1" onclick="clickHandler('field.5.1')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.5.2" onclick="clickHandler('field.5.2')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.5.3" onclick="clickHandler('field.5.3')"></td>
-            <td bgcolor="grey" width="40px" height="40px" id="field.5.4" onclick="clickHandler('field.5.4')"> </td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.5.5" onclick="clickHandler('field.5.5')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.5.6" onclick="clickHandler('field.5.6')"></td>
-			<td bgcolor="grey" width="40px" height="40px" id="field.5.7" onclick="clickHandler('field.5.7')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.5.0" onclick="clickHandler('field.5.0')" oncontextmenu = "rightClick('field.5.0')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.5.1" onclick="clickHandler('field.5.1')" oncontextmenu = "rightClick('field.5.1')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.5.2" onclick="clickHandler('field.5.2')" oncontextmenu = "rightClick('field.5.2')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.5.3" onclick="clickHandler('field.5.3')" oncontextmenu = "rightClick('field.5.3')"></td>
+            <td bgcolor="grey" width="40px" height="40px" id="field.5.4" onclick="clickHandler('field.5.4')" oncontextmenu = "rightClick('field.5.4')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.5.5" onclick="clickHandler('field.5.5')" oncontextmenu = "rightClick('field.5.5')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.5.6" onclick="clickHandler('field.5.6')" oncontextmenu = "rightClick('field.5.6')"></td>
+			<td bgcolor="grey" width="40px" height="40px" id="field.5.7" onclick="clickHandler('field.5.7')" oncontextmenu = "rightClick('field.5.7')"></td>
 	<tr>
-		<td bgcolor="grey" width="40px" height="40px" id="field.6.0" onclick="clickHandler('field.6.0')" ></td>
-		<td bgcolor="grey" width="40px" height="40px" id="field.6.1" onclick="clickHandler('field.6.1')"></td>
-		<td bgcolor="grey" width="40px" height="40px" id="field.6.2" onclick="clickHandler('field.6.2')"></td>
-		<td bgcolor="grey" width="40px" height="40px" id="field.6.3" onclick="clickHandler('field.6.3')"></td>
-		<td bgcolor="grey" width="40px" height="40px" id="field.6.4" onclick="clickHandler('field.6.4')"></td>
-		<td bgcolor="grey" width="40px" height="40px" id="field.6.5" onclick="clickHandler('field.6.5')"></td>
-		<td bgcolor="grey" width="40px" height="40px" id="field.6.6" onclick="clickHandler('field.6.6')"></td>
-		<td bgcolor="grey" width="40px" height="40px" id="field.6.7" onclick="clickHandler('field.6.7')"></td>
+		<td bgcolor="grey" width="40px" height="40px" id="field.6.0" onclick="clickHandler('field.6.0')" oncontextmenu = "rightClick('field.6.0')"></td>
+		<td bgcolor="grey" width="40px" height="40px" id="field.6.1" onclick="clickHandler('field.6.1')" oncontextmenu = "rightClick('field.6.1')"></td>
+		<td bgcolor="grey" width="40px" height="40px" id="field.6.2" onclick="clickHandler('field.6.2')" oncontextmenu = "rightClick('field.6.2')"></td>
+		<td bgcolor="grey" width="40px" height="40px" id="field.6.3" onclick="clickHandler('field.6.3')" oncontextmenu = "rightClick('field.6.3')"></td>
+		<td bgcolor="grey" width="40px" height="40px" id="field.6.4" onclick="clickHandler('field.6.4')" oncontextmenu = "rightClick('field.6.4')"></td>
+		<td bgcolor="grey" width="40px" height="40px" id="field.6.5" onclick="clickHandler('field.6.5')" oncontextmenu = "rightClick('field.6.5')"></td>
+		<td bgcolor="grey" width="40px" height="40px" id="field.6.6" onclick="clickHandler('field.6.6')" oncontextmenu = "rightClick('field.6.6')"></td>
+		<td bgcolor="grey" width="40px" height="40px" id="field.6.7" onclick="clickHandler('field.6.7')" oncontextmenu = "rightClick('field.6.7')"></td>
 	</tr>
 	<tr>
-		<td bgcolor="grey" width="40px" height="40px" id="field.7.0" onclick="clickHandler('field.7.0')"></td>
-		<td bgcolor="grey" width="40px" height="40px" id="field.7.1" onclick="clickHandler('field.7.1')"></td>
-		<td bgcolor="grey" width="40px" height="40px" id="field.7.2" onclick="clickHandler('field.7.2')"></td>
-		<td bgcolor="grey" width="40px" height="40px" id="field.7.3" onclick="clickHandler('field.7.3')"></td>
-		<td bgcolor="grey" width="40px" height="40px" id="field.7.4" onclick="clickHandler('field.7.4')"></td>
-		<td bgcolor="grey" width="40px" height="40px" id="field.7.5" onclick="clickHandler('field.7.5')"></td>
-		<td bgcolor="grey" width="40px" height="40px" id="field.7.6" onclick="clickHandler('field.7.6')"></td>
-		<td bgcolor="grey" width="40px" height="40px" id="field.7.7" onclick="clickHandler('field.7.7')"></td>
+		<td bgcolor="grey" width="40px" height="40px" id="field.7.0" onclick="clickHandler('field.7.0')" oncontextmenu = "rightClick('field.7.0')"></td>
+		<td bgcolor="grey" width="40px" height="40px" id="field.7.1" onclick="clickHandler('field.7.1')" oncontextmenu = "rightClick('field.7.1')"></td>
+		<td bgcolor="grey" width="40px" height="40px" id="field.7.2" onclick="clickHandler('field.7.2')" oncontextmenu = "rightClick('field.7.2')"></td>
+		<td bgcolor="grey" width="40px" height="40px" id="field.7.3" onclick="clickHandler('field.7.3')" oncontextmenu = "rightClick('field.7.3')"></td>
+		<td bgcolor="grey" width="40px" height="40px" id="field.7.4" onclick="clickHandler('field.7.4')" oncontextmenu = "rightClick('field.7.4')"></td>
+		<td bgcolor="grey" width="40px" height="40px" id="field.7.5" onclick="clickHandler('field.7.5')" oncontextmenu = "rightClick('field.7.5')"></td>
+		<td bgcolor="grey" width="40px" height="40px" id="field.7.6" onclick="clickHandler('field.7.6')" oncontextmenu = "rightClick('field.7.6')"></td>
+		<td bgcolor="grey" width="40px" height="40px" id="field.7.7" onclick="clickHandler('field.7.7')" oncontextmenu = "rightClick('field.7.7')"></td>
 	</tr>
 	
 </table>
+<br>
+<div class="wins_lives">
+	<p id="wins_lives"></p>
+</div>
 
 <script>
 	
 
 	var boardXSize = 7;
 	var boardYSize = 7;
+	var lives = 0;
+	var points = 0;
     var chessboard=[
                     ["", "", "", "", "", "", "", ""],
                     ["", "", "", "", "", "", "", ""],
@@ -114,48 +130,137 @@
                      
 
 	function clickHandler(nodeID){  
-        var nodeIdSplited = nodeID.split(".");
+		if(lives > 0){
+		var nodeIdSplited = nodeID.split(".");
         console.log(nodeIdSplited);
 		var x = parseInt(nodeIdSplited[1]);
         var y = parseInt(nodeIdSplited[2]);
-        var hiddenObject = chessboard[x][y];
-        if(hiddenObject=="bomb"){
-			document.getElementById(nodeID).innerHTML = "<img src='bomb.svg'>";
-		}else{		
-			var bombs = bombCount(x,y);
-			document.getElementById(nodeID).innerHTML = bombs;
-			// if(hiddenObject=="treasure"){
-			// 	document.getElementById(nodeID).innerHTML = "<img src='treasure.svg'>";
-			// }
+        revealField(x,y);
+
+		}
+		
+	}	
+
+	function revealField(x,y){
+		var hiddenObject = chessboard[x][y];
+		var nodeID;
+		nodeID = convertXYToNode(x,y);
+		if (!isFieldOpen(x,y )){
+			addPoints(1);
+			document.getElementById(nodeID).style.backgroundColor="white";
 		}
 
-		document.getElementById(nodeID).style.backgroundColor="white";
-	}	
+        if(hiddenObject=="bomb"){
+			document.getElementById(nodeID).innerHTML = "<img src='bomb.svg'>";
+			addLives(-1);
+			if(lives < 1){
+				showMessage("game over", 6666666);
+				
+			}
+		}else{
+			if(hiddenObject=="treasure"){
+				//document.getElementById(nodeID).innerHTML = "<img src='treasure.svg'>";
+				addLives(1);
+				
+			}		
+			var bombs = bombCount(x,y);
+			if(bombs > 0){
+				document.getElementById(nodeID).innerHTML = bombs;
+			}else{
+				if (y > 0 && !isFieldOpen(x,y-1)) revealField(x,y-1);
+
+				if (y < boardYSize && !isFieldOpen(x,y+1)) revealField(x,y+1);
+
+				if (x > 0 && !isFieldOpen(x-1,y)) revealField(x-1,y);
+
+				if (x < boardXSize && !isFieldOpen(x+1,y)) revealField(x+1,y);
+
+				if (x > 0 && y > 0 && !isFieldOpen(x-1,y-1)) revealField(x-1,y-1);
+
+				if (x < boardXSize && y < boardYSize && !isFieldOpen(x+1,y+1)) revealField(x+1,y+1);
+
+				if (x > 0 && y < boardYSize && !isFieldOpen(x-1,y+1)) revealField(x-1,y+1);
+
+				if (y > 0 && x < boardXSize && !isFieldOpen(x+1,y-1)) revealField(x+1,y-1);
+
+			}
+		}
+	}
+
+	function convertXYToNode(x,y){
+		var nodeID = "field." + x + "." + y;
+		return nodeID;
+	}
+	function isFieldOpen(x, y){
+			var nodeID = convertXYToNode(x,y);
+			console.log(nodeID);
+			if(document.getElementById(nodeID).style.backgroundColor == "white"){
+				return true;
+			}else{
+				return false;
+			}
+	}
+
+	function rightClick(nodeID){
+		if (document.getElementById(nodeID).innerHTML == '<img src="flag.svg">'){
+			document.getElementById(nodeID).innerHTML = "";
+		}else{
+			document.getElementById(nodeID).innerHTML = '<img src="flag.svg">';
+		}
+		
+	}
+
+	function addLives(l){
+		lives = lives + l;
+		document.getElementById("livesmeter").innerHTML=lives;
+		showMessage("you have got one more live !");
+	}
+
+	function clearMessageBoard(){
+		document.getElementById("wins_lives").innerHTML="";
+	}
+
+	function showMessage(msg, time = 3000){
+		document.getElementById("wins_lives").innerHTML=msg;
+		setTimeout(clearMessageBoard, time);
+	}
+
+
+	function addPoints(p){
+		points = points + p;
+		document.getElementById("pointsmeter").innerHTML=points;
+	}
 
 	function newGame(){
 		document.getElementById('NewGame');
 		for(x = 0;x < 8; x = x + 1 ){
 			for(y = 0;y < 8; y = y + 1){
-				if (Math.random() < 0.3){
+				if (Math.random() < 0.2){
 					chessboard[x][y]="bomb";
 				}else if(Math.random() > 0.9){
 					chessboard[x][y]="treasure";
 				}else{
 					chessboard[x][y] = "";
 				}
-
+				var nodeID;
+				nodeID = "field." + x + "."+ y;
+				document.getElementById(nodeID).style.backgroundColor = "grey";
+				document.getElementById(nodeID).innerHTML = "";
 			}
 		}	
-	
+		lives = 0;
+		addLives(1);
 	}
 
+
 	
+
 	function bombCount(x,y){
 		var count = 0;
 		if(y > 0 && chessboard[x][y - 1] == "bomb" ){
 			count = count + 1; 
 		}
-		if(chessboard[x][y + 1] == "bomb" ){
+		if(y < boardYSize && chessboard[x][y + 1] == "bomb" ){
 			count = count + 1; 
 		}
 		if(x > 0 && chessboard[x - 1][y] == "bomb" ){
@@ -167,10 +272,10 @@
 		if(x > 0 && y > 0 && chessboard[x - 1][y - 1] == "bomb" ){
 			count = count + 1; 
 		}
-		if(x < boardXSize && chessboard[x + 1][y + 1] == "bomb" ){
+		if(x < boardXSize && y < boardYSize && chessboard[x + 1][y + 1] == "bomb" ){
 			count = count + 1; 
 		}
-		if(x > 0 && chessboard[x - 1][y + 1] == "bomb" ){
+		if(x > 0 && y < boardYSize && chessboard[x - 1][y + 1] == "bomb" ){
 			count = count + 1; 
 		}
 		if(y > 0 && x < boardXSize && chessboard[x + 1][y - 1] == "bomb" ){
@@ -179,9 +284,10 @@
 		
 		return count;
 	}           
+	
 
-	newGame();
 
+	 
 </script>
 
 </body>
