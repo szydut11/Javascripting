@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="style.css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 </head>
-<body oncontextmenu="return false">
+<body >
 	<div class="header">
 		<h1 id = "heading">Chessboard Test </h1>
 	</div>
@@ -117,7 +117,7 @@
 	var boardYSize = 7;
 	var lives = 0;
 	var points = 0;
-	var revealfield = 0;
+		var revealfield = 0;
 	var flagfields = 0;
     var chessboard=[
                     ["", "", "", "", "", "", "", ""],
@@ -191,6 +191,7 @@
 		if(flagfields + revealfield == (boardXSize+1) * (boardYSize+1)){
 			showMessage("you won !", 55555555);
 		}
+	
 	}
 
 	function convertXYToNode(x,y){
